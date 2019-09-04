@@ -4,15 +4,47 @@ import os
 
 def documentBackup():
     print("You selected document backup")
+    # docs backup
+    doc_SOURCE = "F:\\Documents"
+    doc_BACKUP = "Z:\\pcBackup\\doc_Backup"
+    # Removes current backup directory
+    shutil.rmtree(doc_BACKUP)
+    # create a backup directory
+    shutil.copytree(doc_SOURCE, doc_BACKUP)
+    print (os.listdir(doc_BACKUP))
 
 def pictureBackup():
     print("You selected picture backup")
+    #pics backup
+    pic_SOURCE = "F:\\Pictures"
+    pic_BACKUP = "Z:\\pcBackup\\pic_Backup"
+    # Removes current backup directory
+    shutil.rmtree(pic_BACKUP)
+    # create a backup directory
+    shutil.copytree(pic_SOURCE, pic_BACKUP)
+    print (os.listdir(pic_BACKUP))
 
 def videoBackup():
     print("You selected video backup")
+    #pics backup
+    vid_SOURCE = "F:\\Videos"
+    vid_BACKUP = "Z:\\pcBackup\\vid_Backup"
+    # Removes current backup directory
+    shutil.rmtree(vid_BACKUP)
+    # create a backup directory
+    shutil.copytree(vid_SOURCE, vid_BACKUP)
+    print (os.listdir(vid_BACKUP))
 
 def xamppBackup():
     print("You selected xampp backup")
+    # Websites backup
+    web_SOURCE = "C:\\xampp\\htdocs"
+    web_BACKUP = "Z:\\pcBackup\\Website_Backup"
+    # Removes current backup directory
+    shutil.rmtree(web_BACKUP)
+    # create a backup directory
+    shutil.copytree(web_SOURCE, web_BACKUP)
+    print (os.listdir(web_BACKUP))
 
 def completeBackup():
     print("You selected complete backup")
