@@ -21,7 +21,7 @@ shutil.copytree(doc_SOURCE, doc_BACKUP)
 print (os.listdir(doc_BACKUP))
 
 #pics backup
-pic_SOURCE = "F:\Pictures\Screenshots"
+pic_SOURCE = "F:\\Pictures\\Screenshots"
 pic_BACKUP = "Z:\\pcBackup\\pic_Backup"
 # Removes current backup directory
 shutil.rmtree(pic_BACKUP)
